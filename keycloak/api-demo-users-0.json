@@ -1,0 +1,33 @@
+{
+  "realm" : "influx",
+  "users" : [ {
+    "id" : "c6f2c80b-3d7d-47e7-acba-48de19c786db",
+    "createdTimestamp" : 1484222892279,
+    "username" : "jim",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "jim",
+    "lastName" : "foo",
+    "email" : "jim@foo.com",
+    "credentials" : [ {
+      "type" : "password",
+      "hashedSaltedValue" : "gWaiR2r7ynWeRoDNK4fFLCq92QGv7xJRu0x7wLKJkwRRshxvUNbMckTlY23E4YE/TtnMWnUr+Uv649Dxdcn8tQ==",
+      "salt" : "SkGCcrmrtg7984ffm9C9+w==",
+      "hashIterations" : 20000,
+      "counter" : 0,
+      "algorithm" : "pbkdf2",
+      "digits" : 0,
+      "period" : 0,
+      "createdDate" : 1484222902040,
+      "config" : { }
+    } ],
+    "disableableCredentialTypes" : [ "password" ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "uma_authorization", "offline_access", "user" ],
+    "clientRoles" : {
+      "account" : [ "view-profile", "manage-account" ]
+    },
+    "groups" : [ ]
+  } ]
+}

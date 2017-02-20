@@ -1,0 +1,1 @@
+docker run --name api-demo-wildfly -d -p 8080:8080 -p 9990:9990 adesso/api-demo-wildfly
