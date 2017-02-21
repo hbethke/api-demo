@@ -1,5 +1,5 @@
 {
-  "realm" : "influx",
+  "realm" : "api-demo",
   "users" : [ {
     "id" : "c6f2c80b-3d7d-47e7-acba-48de19c786db",
     "createdTimestamp" : 1484222892279,

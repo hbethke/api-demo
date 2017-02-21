@@ -1,6 +1,6 @@
 {
-  "id" : "influx",
-  "realm" : "influx",
+  "id" : "api-demo",
+  "realm" : "api-demo",
   "notBefore" : 0,
   "revokeRefreshToken" : false,
   "accessTokenLifespan" : 300,
@@ -35,7 +35,7 @@
       "scopeParamRequired" : false,
       "composite" : false,
       "clientRole" : false,
-      "containerId" : "influx"
+      "containerId" : "api-demo"
     }, {
       "id" : "48edf6b1-abaf-4c67-821b-30e1b53fc93a",
       "name" : "uma_authorization",
@@ -43,7 +43,7 @@
       "scopeParamRequired" : false,
       "composite" : false,
       "clientRole" : false,
-      "containerId" : "influx"
+      "containerId" : "api-demo"
     }, {
       "id" : "78491963-5b7d-4f95-87a8-2239f97a04af",
       "name" : "offline_access",
@@ -51,14 +51,14 @@
       "scopeParamRequired" : true,
       "composite" : false,
       "clientRole" : false,
-      "containerId" : "influx"
+      "containerId" : "api-demo"
     }, {
       "id" : "de40d371-ee22-4fd2-b5cd-56c6314c9b14",
       "name" : "user",
       "scopeParamRequired" : false,
       "composite" : false,
       "clientRole" : false,
-      "containerId" : "influx"
+      "containerId" : "api-demo"
     } ],
     "client" : {
       "realm-management" : [ {
@@ -187,7 +187,7 @@
         "clientRole" : true,
         "containerId" : "8cfac2ae-4518-48a7-a017-575944f5b7da"
       } ],
-      "influx" : [ ],
+      "api-demo" : [ ],
       "security-admin-console" : [ ],
       "admin-cli" : [ ],
       "broker" : [ {
@@ -241,13 +241,13 @@
     "id" : "e4896c9b-6ef4-4e1b-b392-6f3cd777912f",
     "clientId" : "account",
     "name" : "${client_account}",
-    "baseUrl" : "/auth/realms/influx/account",
+    "baseUrl" : "/auth/realms/api-demo/account",
     "surrogateAuthRequired" : false,
     "enabled" : true,
     "clientAuthenticatorType" : "client-secret",
     "secret" : "8e1924e8-8713-48fc-b403-def6cd25a213",
     "defaultRoles" : [ "view-profile", "manage-account" ],
-    "redirectUris" : [ "/auth/realms/influx/account/*" ],
+    "redirectUris" : [ "/auth/realms/api-demo/account/*" ],
     "webOrigins" : [ ],
     "notBefore" : 0,
     "bearerOnly" : false,
@@ -565,14 +565,14 @@
     "useTemplateMappers" : false
   }, {
     "id" : "2bceda23-cc13-4892-b44d-0e5967d81c4e",
-    "clientId" : "influx",
-    "rootUrl" : "http://localhost:8080/influx-web",
-    "adminUrl" : "http://localhost:8080/influx-web",
+    "clientId" : "api-demo",
+    "rootUrl" : "http://localhost:8080/api-demo-web",
+    "adminUrl" : "http://localhost:8080/api-demo-web",
     "surrogateAuthRequired" : false,
     "enabled" : true,
     "clientAuthenticatorType" : "client-secret",
     "secret" : "801a1160-1649-430d-8894-6c3eb3d04792",
-    "redirectUris" : [ "http://localhost:8080/influx-web/*", "http://influx-dev01.test-server.ag:8080/influx-web/*", "http://influx-dev02.test-server.ag:8080/influx-web/*" ],
+    "redirectUris" : [ "http://localhost:8080/api-demo-web/*" ],
     "webOrigins" : [ "http://localhost:8080" ],
     "notBefore" : 0,
     "bearerOnly" : false,
@@ -795,12 +795,12 @@
     "id" : "757e0d7c-53f0-4425-80f3-a68feedaa24b",
     "clientId" : "security-admin-console",
     "name" : "${client_security-admin-console}",
-    "baseUrl" : "/auth/admin/influx/console/index.html",
+    "baseUrl" : "/auth/admin/api-demo/console/index.html",
     "surrogateAuthRequired" : false,
     "enabled" : true,
     "clientAuthenticatorType" : "client-secret",
     "secret" : "c9136994-2217-4b37-952a-9ca9251227ba",
-    "redirectUris" : [ "/auth/admin/influx/console/*" ],
+    "redirectUris" : [ "/auth/admin/api-demo/console/*" ],
     "webOrigins" : [ ],
     "notBefore" : 0,
     "bearerOnly" : false,

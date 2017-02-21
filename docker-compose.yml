@@ -2,7 +2,7 @@ version: '2'
 services:
   wildfly:
     container_name: api-demo-wildfly
-    build: api-demo-wildfly/
+    build: wildfly
     image: "adesso/api-demo-wildfly"
     ports:
       - "8080:8080"
@@ -10,15 +10,26 @@ services:
     environment:
       - AUTH_SERVER_HOST=${EXTERNAL_IP}
       - AUTH_SERVER_PORT=8081
-    links:
+#    links:
 #      - keycloak:api-demo-keycloak
 
   keycloak:
     container_name: api-demo-keycloak
-    build: api-demo-keycloak/
+    build: keycloak
     image: "adesso/api-demo-keycloak"
     ports:
       - "8081:8080"
       - "9991:9990"
     environment:
       - KEYCLOAK_LOGLEVEL=DEBUG
+    links:
+      - ldap:api-demo-ldap
+
+  ldap:
+    container_name: api-demo-ldap
+    build: ldap
+    image: "adesso/api-demo-ldap"
+    ports:
+      - "389:389"
+      - "639:639"
+

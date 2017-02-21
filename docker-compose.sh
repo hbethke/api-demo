@@ -13,5 +13,5 @@ fi
 export EXTERNAL_IP=$myip
 export INFLUX_DIR=$(dirname `pwd`)
 
-echo "Starting inFLUX Docker containers running on IP adress: ${EXTERNAL_IP}"
+echo "Starting Docker containers running on IP adress: ${EXTERNAL_IP}"
 exec docker-compose $@
